@@ -1,0 +1,26 @@
+img:hover {
+  transform: scale(1.05);
+}
+.logo-area {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-rotate {
+  width: 100px; /* Smaller size */
+  height: auto;
+  animation: rotateLogo 6s linear infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
